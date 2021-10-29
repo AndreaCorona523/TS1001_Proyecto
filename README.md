@@ -40,7 +40,7 @@ El codigo nos permite ver la aplicacion de los diferentes filtros a una imagen l
 ![figura](https://user-images.githubusercontent.com/85129680/139475690-bb3e2272-6d6a-478f-9233-744fc1c5eefc.png)
 
 
-# Bibliografias 
+# Bibliografías
 1)Anónimo. (s.f). Ricker wavelet. octubre 28,2021, de Wikipedia Sitio web: https://en.wikipedia.org/wiki/Ricker_wavelet
 
 2)Anónimo . (s.f). Gaussian blur. octubre 28,2021, de wikipedia Sitio web: https://en.wikipedia.org/wiki/Gaussian_blur
