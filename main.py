@@ -4,6 +4,7 @@ from PIL import Image
 from scipy import ndimage
 import cv2
 import librerias_kernel as lbk
+import argparse
 
 #Funcion para agregar padding
 def pad_with(vector, pad_width, iaxis, kwargs):
