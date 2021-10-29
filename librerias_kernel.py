@@ -4,19 +4,22 @@ import numpy
 #Parametros iniciales valor de sigma y tamaño de matriz (k)
 def kernel_sombrero(sigma,k):
     matrix=numpy.zeros((k,k)); #Crear matriz de K x K con valor 0
-    for x in range (0,k): # For para recorer todos los valores en x 
-        for y in range (0,k): #For para recorer todos los valores en y
+    for x in range (0,k): # For para recorer todos los valores en eje horizontal
+        for y in range (0,k): #For para recorer todos los valores en eje vertical
       #Formula para el filtro del sombrero en 2D
             matrix[x][y]=1/(numpy.pi*sigma**4)*(1-1/2*(x**2+y**2)/sigma**2)
             matrix[x][y]= matrix[x][y] * numpy.exp(-(x**2+y**2)/(2*sigma**2))
     return matrix #Regresamos la matriz con el filtro 
 
+#Funcion para el Kernel de Gauss
+#Parametros iniciales valor de sigma y tamaño de matriz (k)
 def gauss(sigma,k):
-    g=numpy.zeros((k,k));
-    for x in range (0,k):
-        for y in range (0,k):
+    g=numpy.zeros((k,k)); #Crear matriz de K x K con valor 0
+    for x in range (0,k): # For para recorer todos los valores en eje horizontal
+        for y in range (0,k): #For para recorer todos los valores en eje vertical
+      #Formula para el filtro de Gauss en 2D
             g[x][y]=1/(2*numpy.pi*sigma**2)*numpy.exp(-(x**2+y**2)/(2*sigma**2))
-    return g
+    return g #Regresamos la matriz con el filtro
    
    
 #Aquí se tiene el segmento utilizado para el filtro laplaciano que ocupa antes
