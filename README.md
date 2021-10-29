@@ -10,7 +10,7 @@ El desarrollo del proyecto se realizó entre todos los integrantes del equipo pa
 
 -Jazzareth Bernal Martinez: Función de Gauss
 
--Gabriela Nares Zavala: Función de Sepa
+-Gabriela Nares Zavala: Función de Sepia
 
 -Fabián Enrique Avilés Cortés: Función de Laplace
 
