@@ -5,10 +5,14 @@ Este proyecto realiza una aplicación de kernel en la imagen a través de convol
 
 # Colaboración 
 El desarrollo del proyecto se realizó entre todos los integrantes del equipo para ello se dividieron las funciones de cada kernel de la siguiente manera:
-Andrea corona Arroyo: Función del Sombrero Mexicano 
-Jazzareth Bernal Martinez: Función de Gauss
-Gabriela Nares Zavala: Función de Sepai
-Fabián Enrique Avilés Cortés: Función de Laplace
+
+-Andrea corona Arroyo: Función del Sombrero Mexicano 
+
+-Jazzareth Bernal Martinez: Función de Gauss
+
+-Gabriela Nares Zavala: Función de Sepai
+
+-Fabián Enrique Avilés Cortés: Función de Laplace
 
 
 # Kernels implementados 
