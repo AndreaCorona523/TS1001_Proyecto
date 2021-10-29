@@ -42,7 +42,7 @@ Imagen2 = ndimage.convolve(I, klp, mode='constant', cval=0.0)
 plt.figure(figsize = (15,15))
 
 #Se aplica Kernel Sepia a Imagen Original 
-ksep = lbk.sepia()
+ksep= lbk.sepia()
 
 #Imagen original 
 plt.subplot(3,3,1)
@@ -64,16 +64,15 @@ plt.subplot(3,3,4)
 plt.imshow(Imagen2)
 plt.xlabel('Kernel Laplacian sigma= 5')
 
-#Imagen con Kernel Sepia
-plt.subplot(3,3,5)
-plt.imshow(ksep)
-plt.xlabel('Kernel Sepia')
-
 #Imagenes con kernel
-plt.subplot(3,3,6)
+plt.subplot(3,3,5)
 plt.imshow(Imagen3)
 plt.xlabel('Kernel =')
 
+#Imagen con Kernel Sepia
+plt.subplot(3,3,6)
+plt.imshow(ksep)
+plt.xlabel('Kernel Sepia')
 
 plt.grid(False)
 plt.show()
