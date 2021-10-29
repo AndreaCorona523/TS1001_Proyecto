@@ -35,7 +35,3 @@ def LoG_discrete(sigma, n):
         for j in range(n):
             l[i,j] = LoG(sigma, (i-(n-1)/2),(j-(n-1)/2))
     return l
-
-sigma = 1.4
-
-l = numpy.round(LoG_discrete(sigma, 9)*(-40/LoG(sigma,0,0)))
