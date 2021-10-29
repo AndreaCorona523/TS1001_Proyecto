@@ -41,16 +41,16 @@ El codigo nos permite ver la aplicacion de los diferentes filtros a una imagen l
 
 
 # Bibliografias 
-1)https://en.wikipedia.org/wiki/Ricker_wavelet
+1)Anónimo. (s.f). Ricker wavelet. octubre 28,2021, de Wikipedia Sitio web: https://en.wikipedia.org/wiki/Ricker_wavelet
 
-2)https://en.wikipedia.org/wiki/Gaussian_blur
+2)Anónimo . (s.f). Gaussian blur. octubre 28,2021, de wikipedia Sitio web: https://en.wikipedia.org/wiki/Gaussian_blur
 
-3)https://homepages.inf.ed.ac.uk/rbf/HIPR2/log.htm
+3)R. Fisher, S. Perkins, A. Walker & E. Wolfart.. (s.f). Laplacian/Laplacian of Gaussian. octubre 28,2021, de Spatial Filters Sitio web: https://homepages.inf.ed.ac.uk/rbf/HIPR2/log.htm
 
-4)https://medium.com/dataseries/designing-image-filters-using-opencv-like-abode-photoshop-express-part-2-4479f99fb35
+4)Agarwal,V.. (2020). Designing Image Filters using OpenCV. octubre 28,2021, de DataSeries Sitio web: https://medium.com/dataseries/designing-image-filters-using-opencv-like-abode-photoshop-express-part-2-4479f99fb35
 
-5)https://towardsdatascience.com/introduction-of-image-processing-with-python-image-filtering-193e9108ea1d
+5)Edeza, T. (2020). Introduction to Image Processing with Python — Image Filtering. octubre 28,2021, de Towards Data Science Sitio web: https://towardsdatascience.com/introduction-of-image-processing-with-python-image-filtering-193e9108ea1d
 
-6)https://wiki.pathmind.com/convolutional-network
+6)Nicholson,C. (s.f). A Beginner's Guide to Convolutional Neural Networks (CNNs). octubre 28,2021, de Pathmind Sitio web: https://wiki.pathmind.com/convolutional-network
 
-7)https://developer.mozilla.org/es/docs/Web/CSS/padding
+7)Anónimo. (2021). padding. octubre 28,2021, de MDN Sitio web: https://developer.mozilla.org/es/docs/Web/CSS/padding
