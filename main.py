@@ -49,6 +49,11 @@ plt.subplot(3,3,1)
 plt.imshow(Is)
 plt.xlabel('Input Image')
 
+#Imagen con Kernel Sepia
+plt.subplot(3,3,8)
+plt.imshow(ks)
+plt.xlabel('Kernel Sepia')
+
 #Imagen con kernel Sombrero
 plt.subplot(3,3,2)
 plt.imshow(Imagen)
