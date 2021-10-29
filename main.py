@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy
 from PIL import Image
 from scipy import ndimage
+import cv2
 import librerias_kernel as lbk
 
 #Funcion para agregar padding
