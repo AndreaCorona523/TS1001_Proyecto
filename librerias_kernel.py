@@ -34,10 +34,6 @@ def LoG_discrete(sigma, k):
             l[i,j] = LoG(sigma, (i-(k-1)/2),(j-(k-1)/2))
     return l
 
-sigma = 1.4
-
-l = numpy.round(LoG_discrete(sigma, 9)*(-40/LoG(sigma,0,0)))
-
 def sepia():
   img = cv2.imread('Sample.png')
   original = img.copy()
