@@ -17,10 +17,22 @@ def gauss(sigma,k):
         for y in range (0,k):
             g[x][y]=1/(2*numpy.pi*sigma**2)*numpy.exp(-(x**2+y**2)/(2*sigma**2))
     return g
+   
+   
+#Aquí se tiene el segmento utilizado para el filtro laplaciano que ocupa antes
+#un filtro Gaussiano para su proceso
 
-def Laplacian(sigma, k):
-    matix=[[0] * k for i in range(k)]
-    for i in range(k):
-        for j in range(k):
-            matrix[i][j]=((i**2+j**2-2*sigma**2)/sigma**4)*math.exp(-1*(i**2+j**2)/2*sigma**2)(i-(k-1)/2,j-(k-1)/2,sigma)
-    return matrix
+def LoG(sigma, x, y):
+    laplace = -1/(numpy.pi*sigma**4)(1-(x**2+y**2)/(2*sigma**2))*numpy.exp(-(x**2+y**2)/(2*sigma**2))
+    return laplace
+
+def LoG_discrete(sigma, n):
+    l = numpy.zeros((n,n))
+    for i in range(n):
+        for j in range(n):
+            l[i,j] = LoG(sigma, (i-(n-1)/2),(j-(n-1)/2))
+    return l
+
+sigma = 1.4
+
+l = numpy.round(LoG_discrete(sigma, 9)*(-40/LoG(sigma,0,0)))
