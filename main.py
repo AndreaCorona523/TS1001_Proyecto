@@ -38,11 +38,12 @@ Imagen1 = ndimage.convolve(I, kg, mode='constant', cval=0.0)
 #Se aplica Laplacian a Imagen
 Imagen2 = ndimage.convolve(I, klp, mode='constant', cval=0.0)
 
-#Kernel Sepia
-ksep = lbk.sepia()
-
 #Se ajusta tamaño de Figura
 plt.figure(figsize = (15,15))
+
+#Se aplica Sepia a Imagen Original 
+ksep = lbk.sepia()
+
 
 #Imagen original 
 plt.subplot(3,3,1)
