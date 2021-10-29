@@ -69,8 +69,10 @@ def procesamiento_imagen(imagen):
     plt.subplot(3,3,8)
     plt.imshow(Imagen3)
     plt.xlabel('Kernel Sepia')
-
+    
     plt.grid(False)
+    
+ #mostrar imagenes    
     plt.show()
 
 if __name__ == "__main__":
