@@ -37,9 +37,7 @@ El área de padding es el espacio entre el contenido del elemento y su borde ( b
 # Resultados 
 El codigo nos permite ver la aplicacion de los diferentes filtros a una imagen los cuales se muestran de la siguiente manera:
 
-# Carpeta de trabajo
-DRIVE: https://drive.google.com/drive/folders/18gmox-BPq_ZHfMg_bUksxcNtGUPHCWCn?usp=sharing
-
+![figura](https://user-images.githubusercontent.com/85129680/139475690-bb3e2272-6d6a-478f-9233-744fc1c5eefc.png)
 
 
 # Bibliografias 
