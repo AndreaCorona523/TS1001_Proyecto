@@ -36,3 +36,14 @@ def LoG_discrete(sigma, k):
 sigma = 1.4
 
 l = numpy.round(LoG_discrete(sigma, 9)*(-40/LoG(sigma,0,0)))
+
+def sepia():
+  img = cv2.imread('Sample.png')
+  original = img.copy()
+  img = cv2.transform(img, numpy.matrix([[0.272, 0.534, 0.131],
+                                      [0.349, 0.686, 0.168],
+                                      [0.393, 0.769, 0.189]])) # Imagen*matriz sepia 
+  img[numpy.where(img > 255)] = 255 # normalizando valores mayores que 255 
+  cv2.waitKey(0)
+  cv2.destroyAllWindows
+  return img
