@@ -28,12 +28,12 @@ def gauss(sigma,k):
 #un filtro Gaussiano para su proceso
 
 def laplacianOfGaussian(sigma, K):
-    M = numpy.zeros((K,K))
+    Matrix = numpy.zeros((K,K))
     for x in range(0,K):
         for y in range(0,K):
-            M[x][y] = -(1/(numpy.pi*sigma**4)) * (1-((x**2+y**2)/(2*sigma**2))) \
+            Matrix[x][y] = -(1/(numpy.pi*sigma**4)) * (1-((x**2+y**2)/(2*sigma**2))) \
                         * numpy.exp(-(x**2+y**2)/(2*sigma**2))
-    return M #Regresamos la matriz con el filtro 
+    return Matrix #Regresamos la matriz con el filtro 
 
 def sepia():
   img = cv2.imread('Sample.png')
