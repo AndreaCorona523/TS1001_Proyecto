@@ -74,7 +74,7 @@ def procesamiento_imagen(imagen):
     plt.show()
 
 if __name__ == "__main__":
-    #get image arguments from the shell  "python main.py test_images/image.jpg"
+    #Obtener imagen de carpeta de imagenes
     ap = argparse.ArgumentParser()
     ap.add_argument("image", help="Path to the image", type=str)
     args = ap.parse_args()
