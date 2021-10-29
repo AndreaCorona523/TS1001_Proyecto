@@ -39,7 +39,7 @@ Imagen1 = ndimage.convolve(I, kg, mode='constant', cval=0.0)
 Imagen2 = ndimage.convolve(I, klp, mode='constant', cval=0.0)
 
 #Kernel Sepia
-ks=sepia()
+ksep=sepia()
 
 #Se ajusta tamaño de Figura
 plt.figure(figsize = (15,15))
@@ -66,7 +66,7 @@ plt.xlabel('Kernel Laplacian sigma= 5')
 
 #Imagen con Kernel Sepia
 plt.subplot(3,3,5)
-plt.imshow(ks)
+plt.imshow(ksep)
 plt.xlabel('Kernel Sepia')
 
 #Imagenes con kernel
