@@ -27,7 +27,7 @@ ks=lbk.kernel_sombrero(3,15)
 kg=lbk.gauss(10,15)
 
 #Kernel Laplacian
-klp = lbk.Laplacian(5,15)
+klp = lbk.laplacianOfGaussian(5,15)
 
 #Se aplica Kernel Sombrero a Imagen
 Imagen = ndimage.convolve(I, ks, mode='constant', cval=0.0)
@@ -38,11 +38,11 @@ Imagen1 = ndimage.convolve(I, kg, mode='constant', cval=0.0)
 #Se aplica Laplacian a Imagen
 Imagen2 = ndimage.convolve(I, klp, mode='constant', cval=0.0)
 
+#Se aplica Kernel sepia
+Imagen3 = lbk.sepia('Sample.png');
+
 #Se ajusta tamaño de Figura
 plt.figure(figsize = (15,15))
-
-#Se aplica Kernel Sepia a Imagen Original 
-ksep= lbk.sepia()
 
 #Imagen original 
 plt.subplot(3,3,1)
@@ -64,14 +64,9 @@ plt.subplot(3,3,4)
 plt.imshow(Imagen2)
 plt.xlabel('Kernel Laplacian sigma= 5')
 
-#Imagenes con kernel
+#Imagenes con kernel Sepia
 plt.subplot(3,3,5)
 plt.imshow(Imagen3)
-plt.xlabel('Kernel =')
-
-#Imagen con Kernel Sepia
-plt.subplot(3,3,6)
-plt.imshow(ksep)
 plt.xlabel('Kernel Sepia')
 
 plt.grid(False)
