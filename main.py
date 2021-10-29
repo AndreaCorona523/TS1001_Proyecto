@@ -41,9 +41,8 @@ Imagen2 = ndimage.convolve(I, klp, mode='constant', cval=0.0)
 #Se ajusta tamaño de Figura
 plt.figure(figsize = (15,15))
 
-#Se aplica Sepia a Imagen Original 
+#Se aplica Kernel Sepia a Imagen Original 
 ksep = lbk.sepia()
-
 
 #Imagen original 
 plt.subplot(3,3,1)
