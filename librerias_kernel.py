@@ -1,4 +1,5 @@
 import numpy
+import cv2
  
 #Funcion para el Kernel del sombrero 
 #Parametros iniciales valor de sigma y tamaño de matriz (k)
