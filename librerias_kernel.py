@@ -35,6 +35,7 @@ def laplacianOfGaussian(sigma, K):
                         * numpy.exp(-(x**2+y**2)/(2*sigma**2))
     return Matrix #Regresamos la matriz con el filtro 
 
+ #Kernel Sepia para aplicar un  filtro sepia a la imagen original 
 def sepia():
   img = cv2.imread('Sample.png')
   original = img.copy()
