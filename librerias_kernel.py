@@ -42,6 +42,4 @@ def sepia(imagen):
                                       [0.349, 0.686, 0.168],
                                       [0.393, 0.769, 0.189]])) # Imagen*matriz sepia 
   img[numpy.where(img > 255)] = 255 # normalizando valores mayores que 255 
-  cv2.waitKey(0)
-  cv2.destroyAllWindows
   return img #Regresamos la matriz con el filtro 
