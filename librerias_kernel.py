@@ -27,16 +27,13 @@ def gauss(sigma,k):
 #Aquí se tiene el segmento utilizado para el filtro laplaciano que ocupa antes
 #un filtro Gaussiano para su proceso
 
-def LoG(sigma, x, y):
-    laplace = -1/(numpy.pi*sigma**4)(1-(x**2+y**2)/(2*sigma**2))*numpy.exp(-(x**2+y**2)/(2*sigma**2))
-    return laplace #Regresamos la matriz con el filtro 
-
-def LoG_discrete(sigma, k):
-    l = numpy.zeros((k,k))
-    for i in range(k):
-        for j in range(k):
-            l[i,j] = LoG(sigma, (i-(k-1)/2),(j-(k-1)/2))
-    return l #Regresamos la matriz con el filtro 
+def laplacianOfGaussian(sigma, K):
+    M = numpy.zeros((K,K))
+    for x in range(0,K):
+        for y in range(0,K):
+            M[x][y] = -(1/(numpy.pi*sigma**4)) * (1-((x**2+y**2)/(2*sigma**2))) \
+                        * numpy.exp(-(x**2+y**2)/(2*sigma**2))
+    return M #Regresamos la matriz con el filtro 
 
 def sepia():
   img = cv2.imread('Sample.png')
