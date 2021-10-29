@@ -64,8 +64,13 @@ plt.subplot(3,3,4)
 plt.imshow(Imagen2)
 plt.xlabel('Kernel Laplacian sigma= 5')
 
-#Imagenes con kernel
+#Imagen con Kernel Sepia
 plt.subplot(3,3,5)
+plt.imshow(ks)
+plt.xlabel('Kernel Sepia')
+
+#Imagenes con kernel
+plt.subplot(3,3,6)
 plt.imshow(Imagen3)
 plt.xlabel('Kernel =')
 
